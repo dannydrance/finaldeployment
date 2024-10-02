@@ -40,7 +40,7 @@ if st.button('Predict'):
     # Display result
     if predicted_label[0][0] == 1:
         st.error('Machine will fail soon.')
-        st.error(str(round(prediction[0][0],2)*100)+'%')
+        st.error('Probability within 30 days is ' + str(round(prediction[0][0] * 100, 2)) + '%')
     else:
         st.success('Machine is in good condition.')
-        st.success(str(round(prediction[0][0],2)*100)+'%')
+        st.success('Probability within 30 days is ' + str(round(prediction[0][0] * 100, 2)) + '%')
