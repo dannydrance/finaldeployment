@@ -39,8 +39,17 @@ if st.button('Predict'):
 
     # Display result
     if predicted_label[0][0] == 1:
-        st.error('Machine will fail soon.')
-        st.error('Probability within 30 days is ' + str(round(prediction[0][0] * 100, 2)) + '%')
+        # Displaying the error message
+        st.markdown(
+            f"<span style='font-size: 20px; font-weight: bold; color: red;'>Machine will fail soon.</span>",
+            unsafe_allow_html=True
+        )
+        
+        # Displaying the probability message
+        st.markdown(
+            f"<span style='font-size: 20px; font-weight: bold; color: red;'>Probability within 30 days is {round(prediction[0][0] * 100, 2)}%</span>",
+            unsafe_allow_html=True
+        )
     else:
         st.success('Machine is in good condition.')
         st.success('Probability within 30 days is ' + str(round(prediction[0][0] * 100, 2)) + '%')
