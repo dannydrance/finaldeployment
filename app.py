@@ -35,7 +35,7 @@ if st.button('Predict'):
 
     # Make prediction
     prediction = model.predict(input_features_scaled)
-    predicted_label = (prediction > 0.5).astype("int32")
+    predicted_label = (prediction > 0.2).astype("int32")
 
     # Display result
     if predicted_label[0][0] == 1:
