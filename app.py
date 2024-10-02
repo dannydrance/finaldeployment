@@ -14,12 +14,12 @@ st.title('Machine Failure Prediction')
 setting1 = st.number_input('Coefficient of Setting 1')
 setting2 = st.number_input('Coefficient of Setting 2')
 setting3 = st.number_input('Coefficient of Setting 3')
-s1 = st.number_input('Sensor 1')
-s2 = st.number_input('Sensor 2')
-s3 = st.number_input('Sensor 3')
-s4 = st.number_input('Sensor 4')
-s5 = st.number_input('Sensor 5')
-s6 = st.number_input('Sensor 6')
+s1 = st.number_input('Vibration Value')
+s2 = st.number_input('Pressure Value')
+s3 = st.number_input('Flow Rate')
+s4 = st.number_input('Humidity Value')
+s5 = st.number_input('Current/Voltage Value')
+s6 = st.number_input('Speed/Rotation Value')
 
 # Button to predict
 if st.button('Predict'):
