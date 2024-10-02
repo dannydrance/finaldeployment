@@ -39,7 +39,8 @@ if st.button('Predict'):
 
     # Display result
     if predicted_label[0][0] == 1:
-        st.error('Machine will fail soon.'+' '+str((prediction[0][0])*100)+'%')
+        st.error('Machine will fail soon.)
+        st.error(str(round(prediction[0][0],2)*100)+'%')
     else:
         st.success('Machine is in good condition.')
-        st.success(prediction[0][0])
+        st.success(str(round(prediction[0][0],2)*100)+'%')
