@@ -11,9 +11,9 @@ scaler = joblib.load('scaler.pkl')
 st.title('Machine Failure Prediction')
 
 # Input features
-setting1 = st.number_input('Coenficient of Setting 1')
-setting2 = st.number_input('Coenficient of Setting 2')
-setting3 = st.number_input('Coenficient of Setting 3')
+setting1 = st.number_input('Coefficient of Setting 1')
+setting2 = st.number_input('Coefficient of Setting 2')
+setting3 = st.number_input('Coefficient of Setting 3')
 s1 = st.number_input('Sensor 1')
 s2 = st.number_input('Sensor 2')
 s3 = st.number_input('Sensor 3')
