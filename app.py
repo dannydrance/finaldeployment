@@ -42,4 +42,4 @@ if st.button('Predict'):
         st.success('Machine will fail soon.')
     else:
         st.success('Machine is in good condition.')
-        st.success(prediction)
+        st.success(predicted_label)
