@@ -47,7 +47,7 @@ if st.button('Predict'):
         
         # Displaying the probability message
         st.markdown(
-            f"<span style='font-size: 20px; font-weight: bold; color: red;'>Probability within 30 days is {round(prediction[0][0] * 100, 2)}%</span>",
+            f"<span style='font-size: 20px; font-weight: bold; color: red;'>Fail Probability within 30 days is {round(prediction[0][0] * 100, 2)}%</span>",
             unsafe_allow_html=True
         )
     else:
